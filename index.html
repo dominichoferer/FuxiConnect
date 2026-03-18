@@ -509,5 +509,98 @@
   </div>
 </main>
 
+<!-- ─── FOOTER ──────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <span class="footer-label">Kontakt</span>
+      <strong>FuxiConnect</strong>
+      <span>Heinz Fuchsbichler</span>
+      <a href="tel:+43676886765061">+43 676 886765061</a>
+      <a href="mailto:info@fuxiconnect.at">info@fuxiconnect.at</a>
+    </div>
+    <div class="footer-legal">
+      <a href="/impressum">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+      <a href="/agb">AGB</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: var(--brand);
+    color: #fff;
+    padding: 40px 48px;
+  }
+
+  .footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .footer-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 6px;
+  }
+
+  .footer-contact strong {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+
+  .footer-contact a:hover { opacity: 1; text-decoration: underline; }
+
+  .footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-self: flex-end;
+  }
+
+  .footer-legal a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.75;
+    transition: opacity 0.2s;
+  }
+
+  .footer-legal a:hover { opacity: 1; text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    footer { padding: 32px 20px; }
+    .footer-inner { flex-direction: column; gap: 28px; }
+    .footer-legal { align-self: flex-start; gap: 16px; }
+  }
+</style>
+
 </body>
 </html>
